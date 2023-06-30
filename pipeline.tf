@@ -69,7 +69,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
       output_artifacts = ["tf-code"]
 
       configuration = {
-        FullRepositoryId = "vanshgulati16/cicd-pipeline"
+        FullRepositoryId = "vanshgulati16/aws-cicd-pipeline"
         BranchName       = "main"
         ConnectionArn    = var.codestar_connector_credentials
         # output_artifacts = "CODE_ZIP"
